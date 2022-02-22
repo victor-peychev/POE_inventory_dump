@@ -14,7 +14,7 @@ F4::
 	Send, {Control down}
 	while GetKeyState("F4", "P"){
 		if(iter == 5){
-			x_coord += 70
+			x_coord += 70/2560*x_monitor_res
 			y_coord = 0
 			iter = 0
 		}
@@ -22,7 +22,7 @@ F4::
 		Sleep 75
 		MouseClick, left
 		iter ++
-		y_coord += 70
+		y_coord += 70/1440*y_monitor_res
 	}
 	
 	Send, {Control up}
